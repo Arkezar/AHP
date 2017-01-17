@@ -1,0 +1,42 @@
+﻿<Window x:Class="SWD_AHP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="491" Width="711">
+    <Grid>
+        <ComboBox Name="combo" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged_1" SelectedIndex="0">
+            <ComboBoxItem Content="Wydajność CPU" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Wydajność GPU" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Ilość pamięci RAM" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Cena" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <ListBox Name="lista" HorizontalAlignment="Left" Height="220" Margin="260,10,0,0" VerticalAlignment="Top" Width="430">
+        </ListBox>
+        <Button Name="add" Content="Dodaj" HorizontalAlignment="Left" Margin="180,10,0,0" VerticalAlignment="Top" Width="75" Click="add_Click"/>
+        <TextBox Name="ist" HorizontalAlignment="Left" Height="23" Margin="135,10,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="40"/>
+        <Button Content="Dodaj laptopa" HorizontalAlignment="Left" Margin="10,235,0,0" VerticalAlignment="Top" Width="93" Click="Button_Click_1"/>
+        <Button Content="Znajdź najlepszego" HorizontalAlignment="Left" Margin="569,235,0,0" VerticalAlignment="Top" Width="121" Click="Button_Click_3"/>
+        <ListView Name="prefList" HorizontalAlignment="Left" Height="193" Margin="10,37,0,0" VerticalAlignment="Top" Width="245">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="145" Header="Preferencja" DisplayMemberBinding="{Binding name}"/>
+                    <GridViewColumn Width="100" Header="Wartość" DisplayMemberBinding="{Binding val}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView Name="laptopList" HorizontalAlignment="Left" Height="189" Margin="10,262,0,0" VerticalAlignment="Top" Width="680">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="130" Header="Producent" DisplayMemberBinding="{Binding man}"/>
+                    <GridViewColumn Width="130" Header="Model" DisplayMemberBinding="{Binding name}"/>
+                    <GridViewColumn Width="120" Header="CPU" DisplayMemberBinding="{Binding cpu}"/>
+                    <GridViewColumn Width="120" Header="GPU" DisplayMemberBinding="{Binding gpu}"/>
+                    <GridViewColumn Width="100" Header="Pamieć RAM" DisplayMemberBinding="{Binding ram}"/>
+                    <GridViewColumn Width="80" Header="Cena" DisplayMemberBinding="{Binding price}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Z pliku" HorizontalAlignment="Left" Margin="108,235,0,0" VerticalAlignment="Top" Width="147" Click="Button_Click_4"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="367,235,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_5"/>
+
+    </Grid>
+</Window>

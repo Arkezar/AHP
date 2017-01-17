@@ -1,0 +1,22 @@
+﻿<Window x:Class="SWD_AHP.AddLaptop"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Dodaj parametry notebooka" Height="257" Width="259" ResizeMode="NoResize">
+    <Grid Margin="0,0,2,0">
+        <TextBox Name="manu" Height="23" Margin="119,13,10,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Label Content="Producent" HorizontalAlignment="Left" Margin="10,11,0,0" VerticalAlignment="Top"/>
+        <Label Content="Model" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top"/>
+        <Label Content="Procesor" HorizontalAlignment="Left" Margin="10,63,0,0" VerticalAlignment="Top"/>
+        <Label Content="Grafika" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top"/>
+        <Label Content="RAM" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cena" HorizontalAlignment="Left" Margin="10,141,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="model" Height="23" Margin="119,39,10,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox Name="cpu" Height="23" Margin="119,65,10,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox Name="gpu" Height="23" Margin="119,91,10,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox Name="ram" Height="23" Margin="119,117,10,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox Name="price" Height="23" Margin="119,143,10,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button Content="Dodaj" HorizontalAlignment="Left" Margin="10,172,0,0" Width="75" Height="24" VerticalAlignment="Top" Click="Button_Click_2"/>
+        <Button Content="Anuluj" Margin="164,172,10,0" Height="24" VerticalAlignment="Top" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
